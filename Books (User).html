@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Books (User)</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="menu" style="color:#3BABF6">User Menu</h2>
+        <a href="user_dashboard.php">Dashboard</a>
+        <a href="user_cart.php">Your Cart</a>
+        <a href="user_orders.php">Your Orders</a>
+        <form method="POST" action="user_dashboard.php">
+            <button type="submit" name="signout" class="button signout">Sign Out</button>
+        </form>
+    </div>
+
+    <h1>Available Books</h1>
+        <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Available</th>
+                    <th>Author</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                                    <tr>
+                        <td>1</td>
+                        <td>Harry Potter-I</td>
+                        <td>1499</td>
+                        <td>10</td>
+                        <td>0</td>
+                        <td>J.K.ROLLINS</td>
+                        <td>
+                                                            <button class="button" disabled>Out of Stock</button>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <td>2</td>
+                        <td>Metamorphosis</td>
+                        <td>600</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>Franz Kafka</td>
+                        <td>
+                                                            <a href="add_to_cart.php?up_id=2" class="button">Add to Cart</a>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <td>3</td>
+                        <td>SPY</td>
+                        <td>599</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>Poulo Cohelo</td>
+                        <td>
+                                                            <a href="add_to_cart.php?up_id=3" class="button">Add to Cart</a>
+                                                    </td>
+                    </tr>
+                            </tbody>
+        </table>
+    </div>
+
+            <p style="color: red; padding: 0 30%;">
+            An unknown error occurred.        </p>
+    
+    </body>
+</html>
